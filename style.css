@@ -405,6 +405,7 @@ section h2 {
   border-radius: 10px;
 }
 .linkdiv i:hover {
+  color: #F8C794;
   cursor: url('pointerwhite.png'), auto;
 }
 .projects1{
