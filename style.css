@@ -653,6 +653,9 @@ section h2 {
 .expdet h3{
   font-size: 1rem;
 }
+#duration{
+  font-size: 0.8rem;
+}
 .courses {
   display: flex;
   justify-content: center;
