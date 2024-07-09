@@ -199,9 +199,6 @@ section h2 {
   font-size: 2.5rem;
   color: white;
 }
-section p {
-  text-align: left; 
-}
 #experience{
   display: flex;
   flex-direction: column;
@@ -530,32 +527,297 @@ section p {
   padding: 1rem;
 }
 
-/* @media (max-width:600px){
+@media (max-width:900px){
+::-webkit-scrollbar {
+  width: 5px;
+}
   .container{
+    padding: 1.6rem;
+}
+.ri-arrow-up-double-fill{
+  font-size: 2rem;
+}
+.main{
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      box-sizing: border-box;
+      border-radius: 2rem;
+}
+.namediv{
+    padding: 1rem;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#name{
+    font-size: 1.2rem;
+    text-align: center;
+}
+#sde{
+    font-size: 0.9rem;
+}
+.icon {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .icon i {
+    font-size: 1rem;
+  }
+
+
+.firstdiv {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-bottom: 5rem;
+  }
+.namediv{
+    margin-left: 0rem;
+}
+.firstdiv h1{
+    font-size: 1.2rem;
+    text-align: center;
+    text-decoration: none;
+}
+.firstdiv a {
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  .firstdiv a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: #F8C794;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.5s ease;
+  }
+  .firstdiv a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  .container2{
     height: 100%;
     width: 100%;
-    padding: 10px;
+    padding: 1.6rem;
     display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
-} */
+section {
+  padding: 10px;
+  margin: 10px;
+}
+section h2 {
+  font-size: 1rem;
+}
 
-.mobile-message {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
+.expdiv{
+  height: 18rem;
   width: 100%;
-  height: 100%;
-  background-color: #030637;
+  border: 1.5px solid rgba(255, 255, 255, 0.627);
+  border-radius: 10px;
+  margin-top: 1rem;
+  padding: 1rem;
   color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  justify-content: center;
+  word-wrap: break-word;
+}
+.tech i{
+  font-size: 1.6rem;
+}
+.expdiv h2{
+  font-size: 1.2rem;
+  text-align: start;
+}
+.expdiv h4{
+  font-size: 0.9rem;
+  text-align: start;
+}
+.expdet h3{
+  font-size: 1rem;
+}
+.courses {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.courses ul {
+  list-style-type: disc;
+}
+.courses li {
+  margin-bottom: 5px;
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+.skilldiv{
+  width: 100%;
+  height: 15rem;
+  margin: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  z-index: 9999;
 }
-
-.mobile-message p {
-  font-size: 1.5rem;
-  padding: 1rem;
+.skilldivmain{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.skill1{
+  display: flex;
+  flex-direction: row;
+}
+.skill2{
+  display: flex;
+  flex-direction: row;
+}
+.skill3{
+  display: flex;
+  flex-direction: row;
+}
+.skilldivone{
+  width: 100%;
+  height: 5rem;
+  
+}
+.skilldivtwo{
+  width: 100%;
+  height: 5rem;
+}
+.skilldivthree{
+  width: 100%;
+  height: 5rem;
+}
+.skilldivfour{
+  width: 100%;
+  height: 5rem;
+}
+.skilldivfive{
+  width: 100%;
+  height: 5rem;
+}
+.skilldivsix{
+  width: 100%;
+  height: 5rem;
+}
+.skilldivone, .skilldivtwo, .skilldivthree, .skilldivfour, .skilldivfive, .skilldivsix{
+  padding: 0px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.skilldivone h3{
+  font-size: 1rem;
+}
+.skilldivone i{
+  font-size: 1.4rem;
+}
+.skilldivtwo h3{
+  font-size: 1rem;
+}
+.skilldivtwo i{
+  font-size: 1.4rem;
+}
+.skilldivthree h3{
+  font-size: 1rem;
+}
+.skilldivthree i{
+  font-size: 1.4rem;
+}
+.skilldivfour h3{
+  font-size: 1rem;
+}
+.skilldivfour i{
+  font-size: 1.4rem;
+}
+.skilldivfive h3{
+  font-size: 1rem;
+}
+.skilldivfive i{
+  font-size: 1.4rem;
+}
+.skilldivsix h3{
+  font-size: 1rem;
+}
+.skilldivsix i{
+  font-size: 1.4rem;
+}
+.projects1 h2{
+  text-align: start;
+}
+.projects1 h3{
+  font-size: 0.8rem;
+}
+.allproject{
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: 10px;
+}
+.proname{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.proname h2{
+  font-size: 1rem;
+}
+.proname h3{
+  font-size: 0.8rem;
+}
+#cerID{
+  text-align: start;
+  font-size: 0.8rem;
+}
+#cerLink{
+  text-align: start;
+  font-size: 0.7rem;
+}
+#certificates{
+  margin-top: 10px;
+}
+.cerdiv{
+  display: flex;
+  margin-top: 1rem;
+  flex-direction: column;
+  gap: 1rem;
+}
+#achievement{
+  margin-top: 10px;
+}
+.achiv a{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 0.8rem;
+  gap: 1rem;
+}
+.achiv i{
+  font-size: 1rem;
+}
+#last{
+  text-align: center;
+  font-size: 0.5rem;
+}
 }
