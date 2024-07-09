@@ -627,7 +627,7 @@ section h2 {
 
 .expdiv{
   height: 18rem;
-  width: 100%;
+  width: 80vw;
   border: 1.5px solid rgba(255, 255, 255, 0.627);
   border-radius: 10px;
   margin-top: 1rem;
