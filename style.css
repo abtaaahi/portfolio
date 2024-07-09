@@ -672,7 +672,7 @@ section h2 {
   margin: 5px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
 }
 .skilldivmain{
   width: 100%;
@@ -682,6 +682,7 @@ section h2 {
 .skill1{
   display: flex;
   flex-direction: row;
+  /* justify-content: space-evenly; */
 }
 .skill2{
   display: flex;
@@ -726,40 +727,40 @@ section h2 {
   gap: 1rem;
 }
 .skilldivone h3{
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 .skilldivone i{
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 .skilldivtwo h3{
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 .skilldivtwo i{
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 .skilldivthree h3{
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 .skilldivthree i{
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 .skilldivfour h3{
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 .skilldivfour i{
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 .skilldivfive h3{
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 .skilldivfive i{
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 .skilldivsix h3{
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 .skilldivsix i{
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 .projects1 h2{
   text-align: start;
@@ -787,11 +788,11 @@ section h2 {
 }
 #cerID{
   text-align: start;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 }
 #cerLink{
-  text-align: start;
-  font-size: 0.7rem;
+  text-align: end;
+  font-size: 0.6rem;
 }
 #certificates{
   margin-top: 10px;
