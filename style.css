@@ -289,7 +289,7 @@ section h2 {
 }
 .skilldiv{
   width: 100%;
-  height: 30rem;
+  height: 40rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -675,7 +675,7 @@ section h2 {
 }
 .skilldiv{
   width: 100%;
-  height: 15rem;
+  height: 20rem;
   margin: 5px;
   display: flex;
   justify-content: center;
