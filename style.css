@@ -532,6 +532,26 @@ section h2 {
   cursor: url('pointerwhite.png'), auto;
 }
 
+.img-one {
+  display: none;
+  width: 0;
+  height: auto;
+}
+
+.text:hover + .img-one {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  transition: width 0.9s ease-out, height 0.9s ease-out;
+  width: 250px;
+  height: auto;
+}
+
+.hover-container {
+  position: relative;
+  display: inline-block;
+}
+
 @media (max-width:900px){
 ::-webkit-scrollbar {
   width: 5px;
@@ -832,5 +852,9 @@ section h2 {
 #apidoc{
   font-size: 0.7rem;
   text-align: center;
+}
+.text:hover + .img-one {
+  width: 200px;
+  height: auto;
 }
 }
