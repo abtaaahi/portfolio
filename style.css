@@ -534,17 +534,17 @@ section h2 {
 
 .img-one {
   display: none;
-  width: 0;
-  height: auto;
 }
 
 .text:hover + .img-one {
   display: block;
-  position: absolute;
-  z-index: 1;
+  position: fixed;
+  top: 2rem; 
+  right: 3rem; 
+  width: 300px; 
+  height: auto; 
+  z-index: 1000;
   transition: width 0.9s ease-out, height 0.9s ease-out;
-  width: 250px;
-  height: auto;
 }
 
 .hover-container {
@@ -593,8 +593,6 @@ section h2 {
   .icon i {
     font-size: 1rem;
   }
-
-
 .firstdiv {
     padding: 0;
     margin: 0;
@@ -855,6 +853,7 @@ section h2 {
 }
 .text:hover + .img-one {
   width: 200px;
-  height: auto;
+  top: 10rem; 
+  right: 2rem; 
 }
 }
