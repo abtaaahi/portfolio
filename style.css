@@ -1,0 +1,859 @@
+.kode-mono-okay {
+  font-family: "Kode Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kode Mono", monospace;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #030637;
+    scroll-behavior: smooth;
+    cursor: url('circlewhite.png'), auto;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    padding: 80px;
+    display: flex;
+}
+.main{
+    flex: 1;
+      background-color: #3C0753;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-sizing: border-box;
+      border-radius: 2rem;
+}
+.namediv{
+    margin-left: 2rem;
+}
+#name{
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+}
+#sde{
+    color: white;
+    font-size: 1.7rem;
+}
+.icon {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+  }
+  .icon a {
+    color: white; 
+    text-decoration: none;
+  }
+  .icon i {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .icon i:hover{
+    color: #F8C794;
+    cursor: url('pointerwhite.png'), auto;
+  }
+
+.firstdiv {
+    padding: 2rem;
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+.namediv{
+    margin-left: 2rem;
+}
+.firstdiv h1{
+    font-size: 2.5rem;
+    text-align: end;
+    text-decoration: none;
+}
+.firstdiv a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  .firstdiv a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 4px;
+    background-color: #F8C794;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.5s ease;
+  }
+  .firstdiv a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  .firstdiv a:hover{
+    color: #F8C794;
+    cursor: url('pointerwhite.png'), auto;
+  }
+  .scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  .scroll-to-top:hover {
+    font-weight: 700;
+    cursor: url('pointerwhite.png'), auto;
+  }
+  .ri-arrow-up-double-fill{
+    font-size: 3rem;
+  }
+  .tooltip {
+    position: relative;
+    color: inherit; 
+    text-decoration: none; 
+  }
+  .tooltip::before {
+    content: attr(data-tooltip); 
+    position: absolute;
+    top: calc(100% + 5px); 
+    left: 50%; 
+    transform: translateX(-50%); 
+    padding: 5px;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+  }
+  .tooltip:hover::before {
+    opacity: 1; 
+  }
+  .typewriter {
+    display: inline-block;
+    overflow: hidden;
+    border-right: .15em solid white;
+    white-space: nowrap;
+    letter-spacing: .15em;
+    animation: typing 3.5s steps(22, end) forwards, initial-blink 3.5s steps(22, end) forwards;
+    position: relative;
+  }
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 14em; }
+  }
+  @keyframes initial-blink {
+    0%, 100% { border-color: white; }
+    50% { border-color: transparent; }
+  }
+  @keyframes slow-blink {
+    0%, 100% { border-color: white; }
+    50% { border-color: transparent; }
+  }
+  .typewriter.blinking {
+    animation: slow-blink 1s step-end infinite;
+  }
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: #030637;
+  }  
+  ::-webkit-scrollbar-thumb {
+    background-color: #3C0753;
+    border-radius: 5px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }
+  .container2{
+    height: 100%;
+    width: 100%;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+}
+section {
+  padding: 20px;
+  margin: 20px;
+  
+}
+section h2 {
+  text-align: center; 
+  font-size: 2.5rem;
+  color: white;
+}
+#experience{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 1s ease;
+}
+#education{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 1s ease;
+}
+.expdiv{
+  height: 16rem;
+  width: 35rem;
+  border: 1.5px solid rgba(255, 255, 255, 0.627);
+  border-radius: 10px;
+  margin-top: 1rem;
+  padding: 2rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  justify-content: center;
+}
+.tech i{
+  font-size: 2rem;
+}
+.expdiv h2{
+  font-size: 1.7rem;
+  text-align: start;
+}
+.expdiv h4{
+  font-size: 0.9rem;
+  text-align: start;
+}
+.tech i:hover{
+  color: #F8C794;
+  cursor: url('pointerwhite.png'), auto;
+}
+.expdiv {
+  color: white;
+}
+.expdet a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+.expdet a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 1.5px;
+  background-color: #F8C794;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.5s ease;
+}
+.expdet a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.expdet a:hover {
+  cursor: url('pointerwhite.png'), auto;
+}
+.divhoverexp :hover{
+  background-color: #3C0753;
+  border: none;
+}
+.courses {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.courses ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+.courses li {
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.skilldiv{
+  width: 100%;
+  height: 40rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.skilldivmain{
+  width: 50rem;
+  display: flex;
+  flex-direction: column;
+}
+.skill1{
+  display: flex;
+  flex-direction: row;
+}
+.skill2{
+  display: flex;
+  flex-direction: row;
+}
+.skill3{
+  display: flex;
+  flex-direction: row;
+}
+.skilldivone{
+  width: 100%;
+  height: 10rem;
+}
+.skilldivtwo{
+  width: 100%;
+  height: 10rem;
+}
+.skilldivthree{
+  width: 100%;
+  height: 10rem;
+}
+.skilldivfour{
+  width: 100%;
+  height: 10rem;
+}
+.skilldivfive{
+  width: 100%;
+  height: 10rem;
+}
+.skilldivsix{
+  width: 100%;
+  height: 10rem;
+}
+.skilldivone, .skilldivtwo, .skilldivthree, .skilldivfour, .skilldivfive, .skilldivsix{
+  padding: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.skilldivone h3{
+  font-size: 2rem;
+}
+.skilldivone i{
+  font-size: 3rem;
+}
+.skilldivone:hover{
+  background-color: #3C0753;
+  border-radius: 10px;
+}
+.skilldivtwo h3{
+  font-size: 2rem;
+}
+.skilldivtwo i{
+  font-size: 3rem;
+}
+.skilldivtwo:hover{
+  background-color: #3C0753;
+  border-radius: 10px;
+}
+.skilldivthree h3{
+  font-size: 2rem;
+}
+.skilldivthree i{
+  font-size: 3rem;
+}
+.skilldivthree:hover{
+  background-color: #3C0753;
+  border-radius: 10px;
+}
+.skilldivfour h3{
+  font-size: 2rem;
+}
+.skilldivfour i{
+  font-size: 3rem;
+}
+.skilldivfour:hover{
+  background-color: #3C0753;
+  border-radius: 10px;
+}
+.skilldivfive h3{
+  font-size: 2rem;
+}
+.skilldivfive i{
+  font-size: 3rem;
+}
+.skilldivfive:hover{
+  background-color: #3C0753;
+  border-radius: 10px;
+}
+.skilldivsix h3{
+  font-size: 2rem;
+}
+.skilldivsix i{
+  font-size: 3rem;
+}
+.skilldivsix:hover{
+  background-color: #3C0753;
+  border-radius: 10px;
+}
+.linkdiv i:hover {
+  color: #F8C794;
+  cursor: url('pointerwhite.png'), auto;
+}
+.projects1{
+  color: white;
+  text-align: start;
+}
+.projects1 h2{
+  text-align: start;
+}
+.projects1 h3{
+  font-size: 1rem;
+}
+.allproject{
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.projects1 a{
+  text-decoration: none;
+  color: white;
+}
+.proname{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+.allproject a:hover {
+  cursor: url('pointerwhite.png'), auto;
+}
+.allproject a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+.allproject a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: #F8C794;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.5s ease;
+}
+.allproject a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.allproject a:hover{
+  color: #F8C794;
+  cursor: url('pointerwhite.png'), auto;
+}
+.achiv a{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1rem;
+  gap: 1rem;
+}
+.achiv i{
+  font-size: 2rem;
+}
+.achiv a:hover{
+  color: #F8C794;
+  cursor: url('pointerwhite.png'), auto;
+}
+.proname h2{
+  font-size: 1.5rem;
+}
+.proname a{
+  text-decoration: none;
+  color: white;
+}
+.proname a:hover{
+  color: #F8C794;
+  cursor: url('pointerwhite.png'), auto;
+}
+.proname a:hover {
+  cursor: url('pointerwhite.png'), auto;
+}
+.proname a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+.proname a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: #F8C794;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.5s ease;
+}
+.proname a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.cerdiv{
+  display: flex;
+  margin-top: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+}
+#last{
+  text-align: center;
+  color: white;
+  font-size: 0.8rem;
+  padding: 1rem;
+}
+#last:hover{
+  color: #F8C794;
+  cursor: url('pointerwhite.png'), auto;
+}
+
+.img-one {
+  display: none;
+}
+
+.text:hover + .img-one {
+  display: block;
+  position: fixed;
+  top: 2rem; 
+  right: 3rem; 
+  width: 300px; 
+  height: auto; 
+  z-index: 1000;
+  transition: width 0.9s ease-out, height 0.9s ease-out;
+}
+
+.hover-container {
+  position: relative;
+  display: inline-block;
+}
+
+@media (max-width:900px){
+::-webkit-scrollbar {
+  width: 5px;
+}
+  .container{
+    padding: 1.6rem;
+}
+.ri-arrow-up-double-fill{
+  font-size: 2rem;
+}
+.main{
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      box-sizing: border-box;
+      border-radius: 2rem;
+}
+.namediv{
+    padding: 1rem;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#name{
+    font-size: 1.2rem;
+    text-align: center;
+}
+#sde{
+    font-size: 0.9rem;
+}
+.icon {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .icon i {
+    font-size: 1rem;
+  }
+.firstdiv {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-bottom: 5rem;
+  }
+.namediv{
+    margin-left: 0rem;
+}
+.firstdiv h1{
+    font-size: 1.2rem;
+    text-align: center;
+    text-decoration: none;
+}
+.firstdiv a {
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  .firstdiv a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: #F8C794;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.5s ease;
+  }
+  .firstdiv a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  .container2{
+    height: 100%;
+    width: 100%;
+    padding: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+section {
+  padding: 10px;
+  margin: 10px;
+}
+section h2 {
+  font-size: 1rem;
+}
+
+.expdiv{
+  height: 18rem;
+  width: 80vw;
+  border: 1.5px solid rgba(255, 255, 255, 0.627);
+  border-radius: 10px;
+  margin-top: 1rem;
+  padding: 1rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  justify-content: center;
+  word-wrap: break-word;
+}
+.tech i{
+  font-size: 1.6rem;
+}
+.expdiv h2{
+  font-size: 1.2rem;
+  text-align: start;
+}
+.expdiv h4{
+  font-size: 0.9rem;
+  text-align: start;
+}
+.expdet h3{
+  font-size: 1rem;
+}
+#duration{
+  font-size: 0.8rem;
+}
+.courses {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.courses ul {
+  list-style-type: disc;
+}
+.courses li {
+  margin-bottom: 5px;
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+.skilldiv{
+  width: 100%;
+  height: 20rem;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+}
+.skilldivmain{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.skill1{
+  display: flex;
+  flex-direction: row;
+}
+.skill2{
+  display: flex;
+  flex-direction: row;
+}
+.skill3{
+  display: flex;
+  flex-direction: row;
+}
+.skilldivone{
+  width: 100%;
+  height: 5rem;
+}
+.skilldivtwo{
+  width: 100%;
+  height: 5rem;
+}
+.skilldivthree{
+  width: 100%;
+  height: 5rem;
+}
+.skilldivfour{
+  width: 100%;
+  height: 5rem;
+}
+.skilldivfive{
+  width: 100%;
+  height: 5rem;
+}
+.skilldivsix{
+  width: 100%;
+  height: 5rem;
+}
+.skilldivone, .skilldivtwo, .skilldivthree, .skilldivfour, .skilldivfive, .skilldivsix{
+  padding: 0px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.skilldivone h3{
+  font-size: 0.8rem;
+}
+.skilldivone i{
+  font-size: 1.2rem;
+}
+.skilldivtwo h3{
+  font-size: 0.8rem;
+}
+.skilldivtwo i{
+  font-size: 1.2rem;
+}
+.skilldivthree h3{
+  font-size: 0.8rem;
+}
+.skilldivthree i{
+  font-size: 1.2rem;
+}
+.skilldivfour h3{
+  font-size: 0.8rem;
+}
+.skilldivfour i{
+  font-size: 1.2rem;
+}
+.skilldivfive h3{
+  font-size: 0.8rem;
+}
+.skilldivfive i{
+  font-size: 1.2rem;
+}
+.skilldivsix h3{
+  font-size: 0.8rem;
+}
+.skilldivsix i{
+  font-size: 1.2rem;
+}
+.projects1 h2{
+  text-align: start;
+}
+.projects1 h3{
+  font-size: 0.8rem;
+}
+.allproject{
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: 10px;
+}
+.proname{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.proname h2{
+  font-size: 1rem;
+}
+.proname h3{
+  font-size: 0.8rem;
+}
+.docuname h2{
+  font-size: 0.7rem;
+}
+#cerID{
+  text-align: start;
+  font-size: 0.7rem;
+}
+#cerLink{
+  text-align: end;
+  font-size: 0.6rem;
+}
+#certificates{
+  margin-top: 10px;
+}
+.cerdiv{
+  display: flex;
+  margin-top: 1rem;
+  flex-direction: column;
+  gap: 1rem;
+}
+#achievement{
+  margin-top: 10px;
+}
+.achiv a{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 0.7rem;
+  gap: 1rem;
+}
+.achiv i{
+  font-size: 1rem;
+}
+#last{
+  text-align: center;
+  font-size: 0.5rem;
+}
+#apidoc{
+  font-size: 0.7rem;
+  text-align: center;
+}
+.text:hover + .img-one {
+  width: 200px;
+  top: 10rem; 
+  right: 2rem; 
+}
+}
